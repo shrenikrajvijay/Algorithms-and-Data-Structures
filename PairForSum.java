@@ -103,3 +103,15 @@ public class PairForSum {
         }
     }
 }
+
+
+/*
+run:
+Using Hashset, O(N) :
+6 10
+Using Two Loops, O(N^2)
+6 10
+Using Sorting, O(N Log N)
+6 10
+BUILD SUCCESSFUL (total time: 0 seconds)
+*/
