@@ -47,5 +47,11 @@ public class LeadersInArray {
 }
 
 /*
+run:
+Using two loops, O(N^2) :
+17 5 2 
+Using temporary array, O(N) :
+17 5 2 
+BUILD SUCCESSFUL (total time: 0 seconds)
 
 */
