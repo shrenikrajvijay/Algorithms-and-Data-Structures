@@ -3,15 +3,13 @@ import java.util.Arrays;
 import java.util.HashMap;
 
 /*
- * A majority element in an array A[] of size n is an element that appears more than n/2 times (and hence there is at most one such element).
+   @author vijayshrenikraj
+
+   A majority element in an array A[] of size n is an element that appears more than n/2 times (and hence there is at most one such element).
    I/P : 3 3 4 2 4 4 2 4 4
    O/P : 4
  */
 
-/**
- *
- * @author vijayshrenikraj
- */
 public class MajorityElement {
     public static void main(String[] args) {
         int a[] = {3, 3, 4, 2, 4, 4, 2, 4, 4};
