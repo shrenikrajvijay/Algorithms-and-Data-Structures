@@ -9,7 +9,7 @@ Output : 110
 public class MaxSum {
     private static int maxSum = Integer.MIN_VALUE;
     public static void main(String[] args) {
-        int arr[] = {5,  5, 10, 40, 50, 35};
+        int arr[] = {5, 5, 10, 100, 10, 5};
         System.out.println("Using recursion, O(N^2) :");
         usingRecursion(arr.clone());
         System.out.println("Using simple include/exclude, O(N) :");
@@ -45,5 +45,10 @@ public class MaxSum {
 }
     
 /*
-
+run:
+Using recursion, O(N^2) :
+110
+Using simple include/exclude, O(N) :
+110
+BUILD SUCCESSFUL (total time: 0 seconds)
 */
