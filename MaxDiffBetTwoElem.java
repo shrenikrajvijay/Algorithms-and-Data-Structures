@@ -72,5 +72,12 @@ public class MaxDiffBetTwoElem {
 }
 
 /*
-
+run:
+Using Two loops, O(N^2) :
+8
+Using temporary array, O(N) :
+8
+Using simple loop, O(N) :
+8
+BUILD SUCCESSFUL (total time: 0 seconds)
 */
