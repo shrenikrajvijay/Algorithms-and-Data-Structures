@@ -8,6 +8,11 @@ public class MyLibrary {
         array[left] = array[right];
         array[right] = temp;
     }
+    
+    public static int findGCD(int big, int small){
+        if(small == 0)return big;
+        else return findGCD(small, big%small);
+    }
 }
 
 /*

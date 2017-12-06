@@ -18,7 +18,7 @@ public class ReverseArrayOfString {
         usingRecursion(arr.clone());
     }
 
-    private static void usingTwoPointers(int[] arr) {
+    public static void usingTwoPointers(int[] arr) {
         int left = 0; int right = arr.length-1;
         while(left < right){
             MyLibrary.swap(arr, left++, right--);
@@ -26,13 +26,13 @@ public class ReverseArrayOfString {
         System.out.println(Arrays.toString(arr));
     }
 
-    private static void usingRecursion(int[] arr) {
+    public static void usingRecursion(int[] arr) {
         if(arr.length <= 1) return;
         recurseReverse(arr, 0 , arr.length-1);
         System.out.println(Arrays.toString(arr));
     }
 
-    private static void recurseReverse(int[] arr, int left, int right) {
+    public static void recurseReverse(int[] arr, int left, int right) {
         if(left < right && left < arr.length && right > -1){
             MyLibrary.swap(arr, left, right);
             recurseReverse(arr, ++left, --right);
