@@ -12,15 +12,17 @@ public class DFS {
         g.addEdge(2, 0);
         g.addEdge(2, 3);
         g.addEdge(3, 3);
-        
         g.dfs(2);
-    }
-
-    private static void usingRecursion(Graph g) {
-        
+        System.out.println("Using stack, O(N) :");
+        g.dfsStack(2);
     }
 }
 
 /*
-
+Using recursion, O(N) :
+2 
+0 
+1 
+3 
+BUILD SUCCESSFUL (total time: 0 seconds)
 */

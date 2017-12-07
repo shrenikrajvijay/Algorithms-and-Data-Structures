@@ -1,3 +1,7 @@
+
+import java.util.Arrays;
+import java.util.Stack;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -46,6 +50,34 @@ public class Graph {
         while(start.next != null){
             doDfs(arr, visited, start.next.value);
             start = start.next;
+        }
+    }
+
+    void dfsStack(int startVertex) {
+        Stack<MyList> list = new Stack();
+        int currVertex = startVertex;
+        int [] visited = new int[arr.length];
+        list.add(arr[startVertex]);
+        visited[startVertex] = 1;
+        System.out.println(arr[startVertex].value);
+        do{
+            doDfsStack(arr, visited, arr[currVertex], list);
+            currVertex = (currVertex+1) % arr.length;
+        } while(startVertex != currVertex);
+    }
+
+    private void doDfsStack(MyList[] arr, int[] visited, MyList vertex, Stack stack) {
+        if(visited[vertex.value] == 1)return;
+        System.out.println(vertex.value);
+        visited[vertex.value] = 1;
+        while(vertex.next != null){
+            stack.add(vertex.next);
+            vertex = vertex.next;
+        }
+        while(!stack.empty()){
+            MyList item = (MyList)stack.pop();
+            doDfsStack(arr, visited, item, stack);
+            
         }
     }
 }
