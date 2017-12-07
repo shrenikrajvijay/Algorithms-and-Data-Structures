@@ -12,7 +12,12 @@ public class DFS {
         g.addEdge(2, 0);
         g.addEdge(2, 3);
         g.addEdge(3, 3);
-        System.out.println(g);
+        
+        g.dfs(2);
+    }
+
+    private static void usingRecursion(Graph g) {
+        
     }
 }
 
